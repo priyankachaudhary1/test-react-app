@@ -4,7 +4,11 @@
   "description": "",
   "main": "app.js",
   "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
     "format": "prettier --write \"src/**/*.{js,jsx}\"",
+    "lint": "eslint \"src/**/*.{js,jsx}\" --quiet",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -19,6 +23,14 @@
   },
   "homepage": "https://github.com/priyankachaudhary1/test-react-app#readme",
   "devDependencies": {
-    "prettier": "^2.8.3"
+    "@vitejs/plugin-react": "^3.0.1",
+    "eslint": "^8.32.0",
+    "eslint-config-prettier": "^8.6.0",
+    "prettier": "^2.8.3",
+    "vite": "^4.0.4"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
   }
 }
